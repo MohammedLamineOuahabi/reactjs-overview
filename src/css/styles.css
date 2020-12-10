@@ -1,0 +1,158 @@
+/*
+    Template Name: Rochex - Responsive Bootstrap 4 One Page Portfolio Template
+    Template URI: digitshack.com/rochex
+    Description: Responsive Bootstrap 4 One Page Portfolio Template
+    Author: Digitshack
+    Author URI: https://themeforest.net/user/digitshack
+    Version: 1.0
+*/
+
+/*=================================
+   CSS INDEX
+===================================
+    0. Variables CSS
+    1. Default CSS
+    2. Nav CSS
+    3. Hero CSS
+    4. Article CSS
+    5. Books CSS
+    6. About CSS
+    7. Contact CSS
+    8. Disclosure CSS
+    9. Footer CSS
+
+ =================================*/
+
+/*==================================
+    0. Variables CSS
+====================================*/
+/* poppins */
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+/* muli */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+:root {
+  --body-font: 'Muli', sans-serif;
+  --title-font: 'Poppins', sans-serif;
+  --primary-bg: #fff;
+  --secondary-bg: #f7f7f7;
+  --primary-text-color: #212529;
+  --secondary-text-color: #6c757d;
+  --special-color: #e24727;
+}
+/*==================================
+    1. Default CSS
+====================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+.bg_primary {
+  background-color: var(--primary-bg);
+}
+.bg_secondary {
+  background-color: var(--secondary-bg);
+}
+body {
+  font-family: var(--body-font);
+  margin-bottom: 300px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.5;
+}
+p {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 18px;
+}
+ul li {
+  list-style: none;
+}
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.py-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+.preloaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*==================================
+    2. Nav CSS
+====================================*/
+/*==================================
+    3. Hero CSS
+====================================*/
+/*==================================
+    4. Article CSS
+====================================*/
+/*==================================
+    5. Books CSS
+====================================*/
+/*==================================
+    6. About CSS
+====================================*/
+/*==================================
+    7. Contact CSS
+====================================*/
+/*==================================
+    8. Disclosure CSS
+====================================*/
+/*==================================
+    9. Footer CSS
+====================================*/
