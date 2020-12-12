@@ -37,7 +37,7 @@
   --primary-bg: #fff;
   --secondary-bg: #f7f7f7;
   --primary-text-color: #212529;
-  --secondary-text-color: #6c757d;
+  --secondary-text-color: #3c3c3c;
   --special-color: #e24727;
 }
 /*==================================
@@ -75,6 +75,7 @@ h6 {
 }
 p {
   font-family: var(--body-font);
+  color: var(--secondary-text-color);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -115,6 +116,9 @@ img {
   width: 100%;
   height: auto;
 }
+section {
+  padding: 20px;
+}
 #preloader {
   position: fixed;
   left: 0;
@@ -138,9 +142,40 @@ img {
 /*==================================
     3. Hero CSS
 ====================================*/
+
 /*==================================
     4. Article CSS
 ====================================*/
+.header-image,
+.title,
+.content h2,
+.content h3,
+.content p,
+.content .resources {
+  width: 75vw;
+  height: auto;
+  margin: auto;
+}
+.title {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 30px auto;
+}
+.content h2 {
+  margin: 25px auto;
+}
+.content h3 {
+  margin: 20px auto;
+}
+.content p {
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.content .resources {
+  margin: 30px auto;
+  text-align: center;
+}
 /*==================================
     5. Books CSS
 ====================================*/

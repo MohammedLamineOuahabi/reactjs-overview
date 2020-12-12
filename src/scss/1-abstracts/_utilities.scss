@@ -1,6 +1,12 @@
-//used
+/*  used  */
 .u-mt-under-nav {
   margin-top: calc(#{$nav-height} + #{$gutter-vertical-small}) !important;
+}
+
+.wrap {
+  max-width: $grid-width;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .inline-block {

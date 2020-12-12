@@ -1,0 +1,8 @@
+@include respond(tab-port) {
+  footer,
+  section {
+    & div {
+      padding: 4rem 2rem;
+    }
+  }
+}

@@ -1,22 +1,9 @@
 .nav {
-  /************* responsive navBar **************/
-
-  //1- set the hight
-  height: $nav-height;
-
-  //2- display flex space-between H &  center V
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  //3- define typography & colors
-  font-size: 2rem;
+  width: 100%;
   background-color: $color-white-alpha;
-
-  //4- define padding & margin
   border-bottom: 2px solid $color-gray-1;
 
-  //5-make it sticky   fixed : positioned relative to the viewport
+  //  sticky   fixed : positioned relative to the viewport
   position: fixed;
   top: 0;
   left: 0;
@@ -24,35 +11,55 @@
   width: 100%;
   z-index: 9;
 
-  .logo-s {
-    a {
-      font-size: 4rem;
-      font-weight: 900;
-      color: $color-primary;
-      & span {
-        color: $color-gray-3;
+  & .container {
+    //  width & height
+    @include wrap;
+
+    //  display flex
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    //  typography & colors
+    font-size: 2rem;
+
+    //  padding & margin
+    padding: 2rem 0;
+
+    .desktop-menu {
+      ul {
+        list-style-type: none;
+        height: 100%;
+        display: inline-block;
+        li {
+          float: left;
+          &:not(:last-child) {
+            padding-right: 2rem;
+          }
+
+          a {
+            font-family: $font-primary, sans-serif;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-gray-3;
+          }
+          a.active,
+          a:hover {
+            color: $color-primary;
+          }
+        }
       }
     }
   }
-  .desktop-menu {
-    ul {
-      list-style-type: none;
-      height: 100%;
-      display: inline-block;
-      li {
-        float: $direction;
-        padding: 0 2rem;
-        a {
-          font-family: $font-primary, sans-serif;
-          text-decoration: none;
-          text-transform: uppercase;
-          color: $color-gray-3;
-        }
-        a.active,
-        a:hover {
-          color: $color-primary;
-        }
-      }
+}
+
+.logo {
+  a {
+    font-size: 4rem;
+    font-weight: 900;
+    color: $color-primary;
+    & span {
+      color: $color-gray-3;
     }
   }
 }

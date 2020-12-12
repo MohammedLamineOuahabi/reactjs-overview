@@ -1,4 +1,21 @@
 footer {
+  margin-top: 4rem;
+  & div {
+    @include wrap;
+    padding: 4rem 0;
+    text-align: center;
+    & a {
+      text-transform: uppercase;
+      color: $color-gray-4;
+      font-size: 1.8rem;
+    }
+    & a:hover {
+      color: $color-secondary;
+    }
+  }
+}
+
+/* footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -104,3 +121,4 @@ footer {
     }
   }
 }
+ */

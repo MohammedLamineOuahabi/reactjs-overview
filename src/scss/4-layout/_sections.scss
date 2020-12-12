@@ -1,4 +1,51 @@
 section {
+  @include wrap;
+}
+/*********************************
+        article section
+*********************************/
+.article {
+  margin-top: 12rem;
+  //  Article Image
+  & .header-image {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  //  Article title
+  & .title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 3rem auto;
+    color: $color-gray-4;
+  }
+
+  //  Article content
+  & .content {
+    color: $color-gray-4;
+    & h2 {
+      margin: 2.5rem auto;
+    }
+    & h3 {
+      margin: 2rem auto;
+    }
+    & p {
+      text-align: justify;
+      margin: auto;
+    }
+
+    & .resources {
+      margin: 3rem auto;
+      text-align: center;
+    }
+  }
+}
+
+/* section {
   padding: 6rem 0rem;
   color: $color-gray-2;
   h1 {
@@ -48,23 +95,22 @@ section {
   @include absCenter;
 }
 
-/*********************************************************/
-.disclosure {
-  text-align: justify;
-  font-family: Georgia, serif;
-  & p {
-    font-size: 2.4rem;
-    color: $color-gray-2;
-    & sup {
-      font-size: 2rem;
-      font-weight: bolder;
-      color: red !important;
-    }
-  }
-}
-/*********************************************************/
+
+/********************************************************* /
 .keyword {
   font-size: large;
   font-weight: bolder;
   color: $color-primary;
+}
+ */
+
+/*********************************************************/
+.disclosure {
+  margin-top: 4rem;
+  text-align: justify;
+
+  & p {
+    font-size: 2.4rem;
+    color: $color-gray-2;
+  }
 }

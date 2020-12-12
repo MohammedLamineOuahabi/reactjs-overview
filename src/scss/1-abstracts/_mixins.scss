@@ -6,6 +6,12 @@
   }
 }
 
+@mixin wrap {
+  max-width: $grid-width;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 @mixin absCenter {
   position: absolute;
   top: 50%;

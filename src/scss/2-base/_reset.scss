@@ -23,32 +23,62 @@ html {
   }
 }
 
+/****************************
+        Reset tags
+*****************************/
 body {
   box-sizing: border-box;
   font-family: $font-secondary, sans-serif;
   position: relative;
 }
 
-a {
-  text-decoration: none;
+h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
 }
+h2 {
+  font-size: 3.7rem;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+h5 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+h6 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
 ul {
   list-style: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font-primary, sans-serif;
-  text-transform: uppercase;
-  color: $color-primary;
+ul li {
+  list-style: none;
 }
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
 p,
 a,
 span {
   font-family: $font-secondary, sans-serif;
+  font-size: 2rem;
+}
+
+p {
+  line-height: 1.8;
 }
 
 ::selection {
