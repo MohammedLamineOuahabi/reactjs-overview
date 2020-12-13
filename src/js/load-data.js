@@ -10,54 +10,52 @@ function productTemplate(product) {
      <a href="${product.affiliate_link}"> <img src="${product.img_link}"></a>
     </div>
     <div class="product-info">
-      <h4>${truncate(product.author, 20)}</h4>
-      <div class="price-rating">
-        <h5>$${product.price}</h5>
-        <h6>${product.rating}/5</h6>
-      </div>
+      <p>${truncate(product.author, 20)}</p>
+        <p>$${product.price}</p>
+        <p>${product.rating}/5</p>   
      </div>
     </div>  
       
 `;
 }
+const insertProductFilter = () => {
+  document.getElementById('product-filter').innerHTML = `
+  
+<h1> Books found : <span> ${list.length}</span></h1>
+
+<div class="sort">
+
+  <!-- 
+  <div class="collection-sort">
+    <label>Filter by</label>
+    <select>
+    <option value="/">All Books</option>
+    <option value="/">Price</option>
+    <option value="/">Rate</option>
+    </select>
+  </div>-->
+
+  <div class="collection-sort">
+    <label>Sort by</label>
+    <select>
+    <option value="/">All Books</option>
+    <!--
+    <option value="/">Price</option>
+    <option value="/">Rate</option>
+    -->
+    </select>
+  </div>
+
+</div> 
+
+`;
+};
 
 function insertProducts(list) {
-  /** */ document.getElementById('product-filter').innerHTML = `
-  
-  <h1> Books found : <span> ${list.length}</span></h1>
- 
-  <div class="sort">
+  let s = '';
+  for (let i = 0; i < 4; i++) s = s + `${productTemplate(list[i])}`;
 
-    <!-- 
-    <div class="collection-sort">
-      <label>Filter by</label>
-      <select>
-      <option value="/">All Books</option>
-      <option value="/">Price</option>
-      <option value="/">Rate</option>
-      </select>
-    </div>-->
-
-    <div class="collection-sort">
-      <label>Sort by</label>
-      <select>
-      <option value="/">All Books</option>
-      <!--
-      <option value="/">Price</option>
-      <option value="/">Rate</option>
-      -->
-      </select>
-    </div>
-
-  </div> 
-  
-  `;
-
-  document.getElementById('products').innerHTML = `
-  
-  ${list.map(productTemplate).join('')}
-  
-`; /**/
+  document.getElementById('books').innerHTML = s;
 }
 
 var l = Books.filter(b => parseFloat(b.rating).toFixed(2) >= 4);

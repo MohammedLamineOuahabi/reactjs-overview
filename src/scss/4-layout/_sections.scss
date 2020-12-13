@@ -6,22 +6,24 @@ section {
 *********************************/
 .article {
   margin-top: 12rem;
-  //  Article Image
-  & .header-image {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    & img {
-      width: 100%;
-      height: auto;
-    }
-  }
+
   //  Article title
   & .title {
     font-size: 4rem;
     font-weight: 800;
     margin: 3rem auto;
     color: $color-gray-4;
+  }
+
+  //  Article Image
+  & .header-image {
+    width: 100%;
+    height: auto;
+    margin: 3rem auto;
+    & img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   //  Article content
@@ -41,6 +43,34 @@ section {
     & .resources {
       margin: 3rem auto;
       text-align: center;
+
+      & a,
+      & a:visited {
+        font-size: 3rem;
+        color: $color-primary;
+      }
+      & a:hover {
+        color: darken($color-primary, 10%);
+      }
+    }
+  }
+
+  @include respond(phone) {
+    & .title {
+      text-align: center;
+      margin: 1rem auto;
+    }
+    //  Article Image
+    & .header-image {
+      margin: 1rem auto;
+    }
+    //content
+    & .content {
+      padding: 2rem 2rem;
+    }
+    //header-image
+    & .header-image {
+      padding: 2rem 2rem;
     }
   }
 }
