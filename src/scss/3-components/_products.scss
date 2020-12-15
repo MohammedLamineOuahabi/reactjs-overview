@@ -28,11 +28,12 @@
       padding: 0.8rem;
       text-align: center;
       color: $color-gray-3;
-      & p:first-child {
+      & .author {
         color: $color-primary;
       }
-      & p:last-child {
+      & .price {
         color: $color-black;
+        font-weight: 400;
       }
     }
   }
@@ -56,6 +57,9 @@
   }
 }
 
+.checked {
+  color: orange;
+}
 //justify-content: space-between; /* Or space-between or space-around */
 /*************************************/ /*************************************/
 
